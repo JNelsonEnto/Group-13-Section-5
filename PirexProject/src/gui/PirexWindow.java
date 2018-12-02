@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
@@ -24,6 +25,8 @@ public class PirexWindow extends JFrame implements  ActionListener {
     	JFrame frame;
     	frame = new JFrame("Pirex");
     	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    	ImageIcon icon = new ImageIcon("/F:/Group-13-Section-5/PirexProject/src/gui/pirex.png");
+    	frame.setIconImage(icon.getImage());
     	
     	
         MainInterface main = new MainInterface();
